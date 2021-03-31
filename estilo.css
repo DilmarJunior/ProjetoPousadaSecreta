@@ -1,0 +1,359 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro";
+    box-sizing: border-box;
+}
+
+/* Estilo Header */
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px 40px;
+    position: fixed;
+    background-color: white;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #686860;
+    font-size: 1.2em;
+}
+
+.logo {
+    font-size: 1.4em;
+}
+
+.logo span {
+    color: #7297ca;
+}
+
+.menu a {
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+/*Estilo Content - Section 1*/
+.banner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    height: 890px;
+    background-image: url(assets/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-top: 2px solid #0090e6;
+}
+
+.banner .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 28%;
+    width: 48%;
+
+    background-color: rgba(12, 164, 143, 0.6);
+    border: 1px solid white;
+    color: white;
+}
+
+.banner .container h1 {
+    font-size: 4.2em ;
+}
+
+.banner .container p {
+    font-size: 2.2em;
+}
+
+/*Estilo Content - titulos & subtitulos*/
+.subtitle {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #686860;
+    text-align: center;
+
+    height: 200px;
+}
+
+.subtitle .conteinerSubtitle h2 , .subtitle .conteinerSubtitle h3 {
+    text-transform: uppercase;
+    margin: 70px 20px 20px 20px;
+    font-weight: 450;
+    font-size: 2em;
+}
+
+.subtitle .conteinerSubtitle p {
+    margin: 15px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+/*Estilo Content - links quartos */
+.linkQuartos {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+.cards-quartos {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    width: 1024px;
+}
+
+.cards-quartos img {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.card-quartos {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 6px;
+
+    border-bottom: 2.5px solid #437870;
+}
+
+.card-quartos p {
+    margin-bottom: 10px;
+}
+
+.cards-quartos a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex: 1 1 0;
+    
+    text-decoration: none;
+    color: #686860;
+    font-weight: 505;
+}
+
+/*Estilo Content - iframe */
+#route .iframe {
+    margin-top: 20px;
+}
+
+/*Estilo Content - descrições*/
+#descriptions {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#descriptions .conteinerDescription {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    width: 1024px;
+}
+
+#descriptions .description {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    width: 490px;
+    height: 120px;
+    margin: 10px;
+}
+
+#descriptions .description div {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+#descriptions .description div h4 {
+    color: #4e4442;
+    margin-bottom: 15px;
+}
+
+#descriptions .description div p {
+    color:#665d5b;
+    font-weight: 500;
+}
+
+#descriptions .description img {
+    width: 90px;
+    height: 110px;
+    object-fit: cover;
+}
+
+/*Estilo Footer - descrições*/
+.footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    background-color: #438c71;
+    color: white;
+
+    text-align: center;
+}
+
+.footer section{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .contato {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content:  space-around;
+    flex-wrap: wrap;
+
+    width: 1024px;
+
+    padding: 20px 20px 30px 20px;
+
+    border-bottom: 2px solid #3b7a63;
+}
+
+.footer .contato div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    float: left;
+    width: 25%;
+}
+
+
+.footer .contato div a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-right: 30px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .contato div img {
+    margin-right: 10px;
+}
+
+.footer .copyright {
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.4em;
+    text-align: left;
+}
+
