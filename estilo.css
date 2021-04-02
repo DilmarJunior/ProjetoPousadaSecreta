@@ -170,7 +170,7 @@ header {
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     margin: 6px;
