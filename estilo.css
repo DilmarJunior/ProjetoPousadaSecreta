@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+section {
+    width: 100vw;
+}
+/* -------------- Pagina Principal ---------------*/
+
 /* Estilo Header */
 header {
     display: -webkit-box;
@@ -26,13 +31,15 @@ header {
 
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
    
     padding: 10px 40px;
     position: fixed;
     background-color: white;
+    z-index: 10;
+
 }
 
 
@@ -55,7 +62,7 @@ header {
     text-transform: uppercase;
 }
 
-/*Estilo Content - Section 1*/
+/*Estilo Conteudo - Section 1*/
 .banner {
     display: -webkit-box;
     display: -moz-box;
@@ -67,6 +74,7 @@ header {
     align-items: center;
     flex-grow: 1;
 
+    width: 100vw;
     height: 890px;
     background-image: url(assets/img-fundo.jpg);
     background-repeat: no-repeat;
@@ -95,14 +103,14 @@ header {
 }
 
 .banner .container h1 {
-    font-size: 4.2em ;
+    font-size: 4.2rem ;
 }
 
 .banner .container p {
-    font-size: 2.2em;
+    font-size: 2.2rem;
 }
 
-/*Estilo Content - titulos & subtitulos*/
+/*Estilo Conteudo - titulos & subtitulos*/
 .subtitle {
     display: -webkit-box;
     display: -moz-box;
@@ -134,7 +142,7 @@ header {
 
 
 
-/*Estilo Content - links quartos */
+/*Estilo Conteudo - links quartos */
 .linkQuartos {
     display: -webkit-box;
     display: -moz-box;
@@ -154,10 +162,12 @@ header {
 
     display: flex;
     width: 1024px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .cards-quartos img {
-    width: 95%;
+    width: 320px;
     margin-bottom: 20px;
 }
 
@@ -197,12 +207,13 @@ header {
     font-weight: 505;
 }
 
-/*Estilo Content - iframe */
+/*Estilo Conteudo - iframe */
 #route .iframe {
     margin-top: 20px;
+    width: 100vw;
 }
 
-/*Estilo Content - descrições*/
+/*Estilo Conteudo - descrições*/
 #descriptions {
     display: -webkit-box;
     display: -moz-box;
@@ -274,7 +285,7 @@ header {
     object-fit: cover;
 }
 
-/*Estilo Footer - descrições*/
+/*Estilo Rodapé - descrições*/
 .footer {
     display: -webkit-box;
     display: -moz-box;
@@ -285,6 +296,8 @@ header {
     flex-direction: column;
     justify-content: center;
  
+    width: 100vw;
+
     background-color: #438c71;
     color: white;
 
@@ -308,9 +321,9 @@ header {
     justify-content:  space-around;
     flex-wrap: wrap;
 
-    width: 1024px;
+    width: 1100px;
 
-    padding: 20px 20px 30px 20px;
+    padding-bottom: 30px;
 
     border-bottom: 2px solid #3b7a63;
 }
@@ -320,13 +333,14 @@ header {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+    margin: 10px;
 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
     float: left;
-    width: 25%;
+    width: 250px;
 }
 
 
@@ -349,12 +363,121 @@ header {
     margin-right: 10px;
 }
 
+h5 {
+    font-size: 1.4em;
+    text-align: left;
+}
+
+/*Estilo Rodapé - copyright*/
 .footer .copyright {
     font-weight: bold;
 }
 
-h5 {
-    font-size: 1.4em;
-    text-align: left;
+
+
+
+/* -------------- Pagina Quartos ---------------*/
+/*Estilo conteudo */
+#rooms {
+    margin-bottom: 40px;
+}
+
+/*Estilo Conteúdo - sections*/
+#rooms section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Estilo Conteúdo - banner*/
+.bannerPaginaQuartos {
+    flex-grow: 1;
+    
+    width: 100vw;
+    height: 170px;
+
+    background-image: url(assets/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-top: 2px solid #0090e6;
+}
+
+/*Estilo Conteúdo - Quartos*/
+.roomPhotos {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 1024px;
+}
+
+.roomPhoto {
+    margin: 10px 0 60px 0;
+}
+
+.roomPhoto img {
+    width: 320px;
+    height: 200px;
+    margin: 3px;
+}
+
+.titleInformation {
+    color:#665d5b;
+}
+
+.roomInformation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    width: 65%;
+    margin-top: 30px;
+}
+.roomInformation ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+
+    color:#665d5b;
+    font-size: 0.9em;
+}
+
+.roomInformation div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    display: flex;
+    justify-content: center;
+}
+
+.roomInformation li {
+    width: 200px;
+    margin: 5px;
+    flex: 1 0 auto;
 }
 
